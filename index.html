@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>J&P IT Solution | IT Infrastructure, Network, Server และ Cybersecurity</title>
+
+  <meta name="description" content="J&P IT Solution ให้บริการระบบ IT สำหรับองค์กร ครอบคลุม Network Infrastructure, Server, VMware, Nutanix, Veeam Backup, FortiGate Firewall, CCTV และ Business Application Development">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="J&P IT Solution Co., Ltd.">
+  <meta name="theme-color" content="#0b1730">
+
+  <link rel="canonical"
+        href="https://jpitsolution.github.io/jpitsolution/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta property="og:site_name" content="J&P IT Solution">
+  <meta property="og:title" content="J&P IT Solution | IT Solutions for Business">
+  <meta property="og:description" content="โซลูชันระบบไอทีสำหรับองค์กร ตั้งแต่ Network, Server, Security, Backup จนถึง Business Application">
+  <meta property="og:url"
+        content="https://jpitsolution.github.io/jpitsolution/">
+
+  <link rel="icon" href="https://www.jpitsolution.com/assets/images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "J&P IT Solution Co., Ltd.",
+    "alternateName": "บริษัท เจแอนด์พีไอทีโซลูชั่น จำกัด",
+    "url": "https://www.jpitsolution.com/",
+    "sameAs": [
+      "https://github.com/jpitsolution",
+      "https://www.facebook.com/jpitsolutionss"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+66-95-360-9022",
+      "contactType": "sales",
+      "areaServed": "TH",
+      "availableLanguage": ["Thai"]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy: #0b1730;
+      --navy2: #12294b;
+      --blue: #1688f8;
+      --cyan: #32d5e8;
+      --text: #17253b;
+      --muted: #617087;
+      --light: #f4f8fc;
+      --white: #fff;
+      --border: #e1e9f2;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Prompt", sans-serif;
+      color: var(--text);
+      line-height: 1.8;
+      background: #fff;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    .topbar {
+      background: #071124;
+      color: #dce8fa;
+      font-size: 13px;
+      padding: 7px 0;
+    }
+
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      min-height: 74px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.3;
+    }
+
+    .brand span { color: var(--blue); }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 14px;
+    }
+
+    .navlinks a:hover { color: var(--blue); }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 21px;
+      border-radius: 9px;
+      font-weight: 500;
+      transition: .2s;
+    }
+
+    .btn-primary {
+      color: white;
+      background: var(--blue);
+      box-shadow: 0 7px 20px rgba(22,136,248,.22);
+    }
+
+    .btn-primary:hover { background: #0873d8; }
+
+    .btn-outline {
+      color: white;
+      border: 1px solid rgba(255,255,255,.45);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      color: white;
+      background:
+        radial-gradient(ellipse at 85% 20%, rgba(50,213,232,.2), transparent 32%),
+        linear-gradient(125deg, var(--navy), var(--navy2));
+      padding: 100px 0 95px;
+    }
+
+    .hero:after {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border: 1px solid rgba(50,213,232,.18);
+      border-radius: 50%;
+      right: -100px;
+      bottom: -220px;
+      box-shadow: 0 0 0 45px rgba(50,213,232,.035),
+                  0 0 0 90px rgba(50,213,232,.025);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 790px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--cyan);
+      background: rgba(50,213,232,.1);
+      border: 1px solid rgba(50,213,232,.25);
+      padding: 5px 13px;
+      border-radius: 30px;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.35;
+      margin: 0 0 20px;
+      letter-spacing: -.5px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      color: #d1deef;
+      font-size: 16px;
+      margin: 0 0 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    section { padding: 76px 0; }
+
+    .section-head {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .section-head h2 {
+      color: var(--navy);
+      font-size: clamp(25px, 3vw, 34px);
+      line-height: 1.45;
+      margin: 0 0 12px;
+    }
+
+    .section-head p { color: var(--muted); margin: 0; }
+
+    .services { background: var(--light); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      padding: 25px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 34px rgba(20,48,80,.08);
+    }
+
+    .service-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      color: #0879dc;
+      background: #e9f5ff;
+      font-size: 22px;
+      margin-bottom: 13px;
+    }
+
+    .service-card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      color: var(--navy);
+      line-height: 1.5;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .about h2 {
+      font-size: 32px;
+      line-height: 1.45;
+      color: var(--navy);
+      margin: 0 0 17px;
+    }
+
+    .about p { color: var(--muted); }
+
+    .checklist {
+      padding: 0;
+      list-style: none;
+    }
+
+    .checklist li {
+      padding: 7px 0;
+    }
+
+    .checklist li:before {
+      content: "✓";
+      color: #0789d9;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+
+    .feature-panel {
+      background: linear-gradient(145deg, #0d2040, #173e69);
+      color: white;
+      border-radius: 20px;
+      padding: 34px;
+      box-shadow: 0 20px 50px rgba(11,23,48,.13);
+    }
+
+    .feature-panel h3 { margin-top: 0; font-size: 22px; }
+
+    .feature-panel p { color: #d4e2f3; }
+
+    .feature-link {
+      display: block;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,.14);
+      color: #eaf7ff;
+    }
+
+    .feature-link:last-child { border-bottom: 0; }
+
+    .resources { background: var(--light); }
+
+    .resource-card {
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: white;
+    }
+
+    .resource-card h3 { margin: 0 0 8px; color: var(--navy); }
+    .resource-card p { color: var(--muted); font-size: 14px; }
+
+    .resource-card a {
+      color: #0879dc;
+      font-weight: 500;
+    }
+
+    .contact {
+      background: linear-gradient(125deg, #0b1730, #16375d);
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: clamp(26px, 4vw, 36px);
+      margin: 0 0 10px;
+    }
+
+    .contact p {
+      color: #d1deef;
+      margin: 0 auto 25px;
+      max-width: 700px;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      background: #071124;
+      color: #b9c8dc;
+      padding: 25px 0;
+      font-size: 13px;
+    }
+
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer a { color: white; }
+
+    @media (max-width: 850px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .about-grid { grid-template-columns: 1fr; gap: 30px; }
+      .navlinks { gap: 12px; }
+    }
+
+    @media (max-width: 600px) {
+      .topbar .container { justify-content: center; text-align: center; }
+      .nav { min-height: 65px; }
+      .navlinks a:not(.btn) { display: none; }
+      .brand { font-size: 17px; }
+      .hero { padding: 72px 0; }
+      section { padding: 55px 0; }
+      .grid { grid-template-columns: 1fr; }
+      .service-card { padding: 22px; }
+      .feature-panel { padding: 25px; }
+      footer .container { justify-content: center; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>J&P IT Solution Co., Ltd.</span>
+      <span>IT Solutions for Business in Thailand</span>
+    </div>
+  </div>
+
+  <header>
+    <nav class="container nav" aria-label="เมนูหลัก">
+      <a class="brand" href="#home" aria-label="J&P IT Solution Home">
+        J&amp;P <span>IT SOLUTION</span>
+      </a>
+
+      <div class="navlinks">
+        <a href="#services">บริการ</a>
+        <a href="#about">เกี่ยวกับเรา</a>
+        <a href="#resources">ข้อมูลเพิ่มเติม</a>
+        <a class="btn btn-primary"
+           href="https://www.jpitsolution.com/contact">
+          ติดต่อเรา
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <span class="eyebrow">IT SOLUTIONS FOR BUSINESS</span>
+
+          <h1>
+            โซลูชันระบบ IT สำหรับองค์กร<br>
+            เพื่อการทำงานที่มีประสิทธิภาพ
+          </h1>
+
+          <p>
+            J&amp;P IT Solution ให้บริการด้านโครงสร้างพื้นฐานระบบไอที
+            ตั้งแต่ Network, Server, Virtualization, Backup และ Network Security
+            ไปจนถึง CCTV และการพัฒนา Business Application
+            เพื่อรองรับความต้องการขององค์กรและธุรกิจ
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary"
+               href="https://www.jpitsolution.com/">
+              เว็บไซต์บริษัท
+            </a>
+            <a class="btn btn-outline"
+               href="https://www.jpitsolution.com/portfolio">
+              ดูตัวอย่างผลงาน
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>บริการด้าน IT สำหรับองค์กร</h2>
+          <p>
+            ครอบคลุมระบบโครงสร้างพื้นฐาน ความปลอดภัยของเครือข่าย
+            การสำรองข้อมูล และซอฟต์แวร์สำหรับการดำเนินธุรกิจ
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">⌘</div>
+            <h3>Network Infrastructure</h3>
+            <p>
+              ระบบเครือข่ายองค์กร การติดตั้ง LAN การเดินสายสัญญาณ
+              และการติดตั้งอุปกรณ์เครือข่าย
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">▤</div>
+            <h3>Server Infrastructure</h3>
+            <p>
+              ระบบ Server และ Storage สำหรับรองรับแอปพลิเคชัน
+              และบริการสำคัญขององค์กร
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">◈</div>
+            <h3>Virtualization</h3>
+            <p>
+              โซลูชัน VMware และ Nutanix สำหรับระบบ Virtual Machine
+              และโครงสร้างพื้นฐานแบบ Hyperconverged
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">⟳</div>
+            <h3>Backup &amp; Recovery</h3>
+            <p>
+              โซลูชัน Veeam และ NAKIVO สำหรับการสำรองข้อมูล
+              และสนับสนุนการกู้คืนระบบเมื่อเกิดเหตุขัดข้อง
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">⛨</div>
+            <h3>Firewall &amp; Network Security</h3>
+            <p>
+              FortiGate Firewall, VPN และการจัดการนโยบายความปลอดภัย
+              ของเครือข่ายองค์กร
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">▣</div>
+            <h3>CCTV Solution</h3>
+            <p>
+              บริการติดตั้งระบบกล้องวงจรปิด Analog และ IP Camera
+              พร้อมเดินสายและติดตั้งระบบบันทึกภาพ
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">⌘</div>
+            <h3>Business Application Development</h3>
+            <p>
+              พัฒนาระบบ Sales Management, Dashboard, CRM
+              และระบบบริหารงานภายในให้เหมาะกับกระบวนการธุรกิจ
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">◎</div>
+            <h3>Managed Infrastructure Service</h3>
+            <p>
+              บริการ MA Support สำหรับดูแลระบบ IT Infrastructure
+              พร้อม Service Report ออนไลน์และ Customer Report Portal
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">▧</div>
+            <h3>Computer &amp; IT Equipment</h3>
+            <p>
+              บริการจัดหาและจัดส่งคอมพิวเตอร์ อุปกรณ์สำนักงาน
+              และอุปกรณ์ IT ตามความต้องการขององค์กร
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow" style="background:#eaf6ff;color:#0879dc;border-color:#d5ebff">
+            ABOUT J&amp;P IT SOLUTION
+          </span>
+
+          <h2>เทคโนโลยีที่ตอบโจทย์การทำงานของธุรกิจ</h2>
+
+          <p>
+            J&amp;P IT Solution Co., Ltd. ให้บริการด้านเทคโนโลยีสารสนเทศ
+            สำหรับองค์กรและธุรกิจในประเทศไทย โดยครอบคลุมทั้งระบบเครือข่าย
+            เซิร์ฟเวอร์ ระบบสำรองข้อมูล ความปลอดภัยไซเบอร์
+            และการพัฒนาซอฟต์แวร์เพื่อสนับสนุนการทำงาน
+          </p>
+
+          <ul class="checklist">
+            <li>โซลูชันโครงสร้างพื้นฐานระบบ IT</li>
+            <li>ระบบเครือข่ายและความปลอดภัย</li>
+            <li>ระบบสำรองข้อมูลและ Virtualization</li>
+            <li>ซอฟต์แวร์และระบบรายงานสำหรับธุรกิจ</li>
+          </ul>
+
+          <a class="btn btn-primary"
+             href="https://www.jpitsolution.com/">
+            อ่านข้อมูลเพิ่มเติม
+          </a>
+        </div>
+
+        <div class="feature-panel">
+          <h3>J&amp;P IT Solution Online</h3>
+          <p>
+            ดูรายละเอียดบริการ ตัวอย่างผลงาน และบทความความรู้
+            เกี่ยวกับระบบไอทีได้จากเว็บไซต์บริษัท
+          </p>
+
+          <a class="feature-link"
+             href="https://www.jpitsolution.com/">
+            ↗ เว็บไซต์หลักของบริษัท
+          </a>
+          <a class="feature-link"
+             href="https://www.jpitsolution.com/portfolio">
+            ↗ ตัวอย่างผลงานและโครงการ
+          </a>
+          <a class="feature-link"
+             href="https://www.jpitsolution.com/blog/blog">
+            ↗ บทความความรู้ด้าน IT
+          </a>
+          <a class="feature-link"
+             href="https://github.com/jpitsolution">
+            ↗ GitHub ของ J&amp;P IT Solution
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources" id="resources">
+      <div class="container">
+        <div class="section-head">
+          <h2>แหล่งข้อมูลและผลงานด้าน IT</h2>
+          <p>
+            ศึกษาข้อมูลเพิ่มเติมเกี่ยวกับบริการและแนวทางการใช้เทคโนโลยี
+            เพื่อสนับสนุนการทำงานขององค์กร
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="resource-card">
+            <h3>IT Knowledge &amp; Articles</h3>
+            <p>
+              บทความเกี่ยวกับ Network, Firewall, Server,
+              Backup และเทคโนโลยีสำหรับองค์กร
+            </p>
+            <a href="https://www.jpitsolution.com/blog/blog">
+              อ่านบทความบนเว็บไซต์หลัก →
+            </a>
+          </article>
+
+          <article class="resource-card">
+            <h3>Project Portfolio</h3>
+            <p>
+              ตัวอย่างผลงานและโครงการด้านระบบเครือข่าย
+              Server, CCTV และระบบไอที
+            </p>
+            <a href="https://www.jpitsolution.com/portfolio">
+              ดูผลงานเพิ่มเติม →
+            </a>
+          </article>
+
+          <article class="resource-card">
+            <h3>Official Website</h3>
+            <p>
+              เข้าถึงข้อมูลบริษัท รายละเอียดบริการ
+              และช่องทางติดต่ออย่างเป็นทางการ
+            </p>
+            <a href="https://www.jpitsolution.com/">
+              jpitsolution.com →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>ติดต่อ J&amp;P IT Solution</h2>
+        <p>
+          สอบถามข้อมูลบริการด้านระบบ IT สำหรับองค์กร
+          Network, Server, Backup, Security และ Business Application
+          ผ่านช่องทางติดต่อของบริษัท
+        </p>
+
+        <div class="contact-links">
+          <a class="btn btn-primary"
+             href="https://www.jpitsolution.com/contact">
+            ติดต่อผ่านเว็บไซต์
+          </a>
+          <a class="btn btn-outline"
+             href="https://www.facebook.com/jpitsolutionss"
+             target="_blank" rel="noopener noreferrer">
+            Facebook
+          </a>
+          <a class="btn btn-outline"
+             href="https://line.me/R/ti/p/%40108xqncr"
+             target="_blank" rel="noopener noreferrer">
+            LINE Official Account
+          </a>
+          <a class="btn btn-outline" href="tel:+66953609022">
+            โทร. 095-360-9022
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© <span id="year">2026</span> J&amp;P IT Solution Co., Ltd.</span>
+      <span>
+        <a href="https://www.jpitsolution.com/">www.jpitsolution.com</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
