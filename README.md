@@ -1,33 +1,38 @@
-# บริษัท เจแอนด์พี ไอที โซลูชั่น จำกัด (J&P IT Solution Co., Ltd.)
 
-**โซลูชันระบบไอทีสำหรับองค์กรและธุรกิจ**
+# J&P IT Solution Co., Ltd.
 
-J&P IT Solution ให้บริการด้านระบบเทคโนโลยีสารสนเทศสำหรับองค์กรและธุรกิจในประเทศไทย ครอบคลุมตั้งแต่การจัดหาอุปกรณ์ไอที การติดตั้งโครงสร้างพื้นฐานระบบเครือข่ายและเซิร์ฟเวอร์ ระบบสำรองข้อมูล ความปลอดภัยเครือข่าย ไปจนถึงการพัฒนาซอฟต์แวร์และบริการดูแลระบบไอที เพื่อสนับสนุนการดำเนินธุรกิจให้มีประสิทธิภาพและรองรับการเติบโตในระยะยาว
+**IT Solutions for Business in Thailand**
 
-## บริการของเรา
+บริษัท เจแอนด์พี ไอที โซลูชั่น จำกัด ให้บริการระบบเทคโนโลยีสารสนเทศสำหรับองค์กร ครอบคลุมโครงสร้างพื้นฐานระบบเครือข่าย เซิร์ฟเวอร์ ระบบสำรองข้อมูล ความปลอดภัยเครือข่าย และการพัฒนาซอฟต์แวร์สำหรับธุรกิจ
 
-- **Computer Solution** — บริการจัดหา Computer, Notebook และอุปกรณ์ IT พร้อมให้คำแนะนำด้าน Specification การจัดซื้อ และการจัดส่ง
-- **Network Infrastructure Solution** — ออกแบบและติดตั้งระบบ Network เดินสาย LAN ติดตั้ง Rack และจัดระเบียบสายสัญญาณ
-- **Server Infrastructure Solution** — ออกแบบ ติดตั้ง และดูแลระบบ Server, Storage และโครงสร้างพื้นฐานสำหรับองค์กร
-- **VMware Solution** — ติดตั้งและบริหารระบบ Virtualization ด้วย VMware พร้อมตรวจสอบ Resource และ System Health
-- **Nutanix Solution** — ติดตั้ง ดูแล และตรวจสอบ Nutanix Cluster พร้อมบริหารระบบ Hyperconverged Infrastructure
-- **Veeam Backup Solution** — ติดตั้งระบบ Backup ตรวจสอบ Backup Job และประเมินความพร้อมในการกู้คืนข้อมูล
-- **FortiGate Firewall Solution** — ติดตั้งและดูแล Firewall, VPN, Security Policy และระบบรักษาความปลอดภัยเครือข่าย
-- **CCTV Solution** — บริการติดตั้งระบบกล้องวงจรปิด พร้อมเดินสาย ติดตั้งอุปกรณ์ และระบบบันทึกภาพ
-- **Business Application Development** — พัฒนาซอฟต์แวร์ตามความต้องการของธุรกิจ เช่น Sales Management, Dashboard, CRM และระบบบริหารงานภายในองค์กร
-- **Managed Infrastructure Service (MA Support)** — บริการดูแลระบบ IT Infrastructure รายเดือน พร้อม Customer Report Portal และ Service Report ออนไลน์
+## Our Services
 
-## เว็บไซต์บริษัท
+- Network Infrastructure & Cabling
+- Server Infrastructure
+- VMware & Nutanix Virtualization
+- Veeam & NAKIVO Backup Solutions
+- FortiGate Firewall & Network Security
+- CCTV Installation
+- Business Application Development
+- Managed Infrastructure Service (MA Support)
+- Computer & IT Equipment Supply
 
-สามารถดูข้อมูลบริษัท รายละเอียดบริการ และตัวอย่างผลงานเพิ่มเติมได้ที่เว็บไซต์อย่างเป็นทางการ
+## Official Links
 
-- **เว็บไซต์บริษัท:** [https://www.jpitsolution.com/](https://www.jpitsolution.com/)
-- **ตัวอย่างผลงาน:** [https://www.jpitsolution.com/portfolio](https://www.jpitsolution.com/portfolio)
+- Website: https://www.jpitsolution.com/
+- Services: https://www.jpitsolution.com/services
+- Portfolio: https://www.jpitsolution.com/portfolio
+- IT Articles: https://www.jpitsolution.com/blog/blog
+- Facebook: https://www.facebook.com/jpitsolutionss
+- GitHub: https://github.com/jpitsolution
 
-## แนวทางการทำงานของเรา
+## Contact
 
-เราให้ความสำคัญกับการเลือกใช้เทคโนโลยีที่เหมาะสมกับความต้องการของแต่ละองค์กร ตั้งแต่การจัดหาอุปกรณ์ไอที การติดตั้งระบบโครงสร้างพื้นฐาน การรักษาความปลอดภัยของเครือข่ายและข้อมูล ไปจนถึงการพัฒนาซอฟต์แวร์และการดูแลระบบอย่างต่อเนื่อง
+- Phone: 095-360-9022
+- LINE Official Account: @108xqncr
 
-เป้าหมายของเราคือการส่งมอบโซลูชันไอทีที่ใช้งานได้จริง เหมาะสมกับการดำเนินธุรกิจ และช่วยสนับสนุนการทำงานขององค์กรในระยะยาว
+## GitHub Pages
 
-ดูรายละเอียดเพิ่มเติมได้ที่ [J&P IT Solution](https://www.jpitsolution.com/)
+This repository contains a static company information page for J&P IT Solution.
+
+Website: https://jpitsolution.github.io/jpitsolution/
