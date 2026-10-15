@@ -1,705 +1,1706 @@
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="rAgv_Fkk5bOym8wqIEaEQIfP5oMrOUKMjfMeLj51nsk" />
-  <title>J&P IT Solution | IT Infrastructure, Network, Server และ Cybersecurity</title>
 
-  <meta name="description" content="J&P IT Solution ให้บริการระบบ IT สำหรับองค์กร ครอบคลุม Network Infrastructure, Server, VMware, Nutanix, Veeam Backup, FortiGate Firewall, CCTV และ Business Application Development">
+  <title>J&P IT Technical Hub | IT Knowledge, Server & Security</title>
+
+  <meta name="description" content="J&P IT Technical Hub แหล่งรวมความรู้ด้าน IT Infrastructure, Windows Server, SQL Server, Network Security, Backup และ Open Source สำหรับ IT Professionals และองค์กรธุรกิจ">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="author" content="J&P IT Solution Co., Ltd.">
-  <meta name="theme-color" content="#0b1730">
+  <meta name="theme-color" content="#10130f">
 
-  <link rel="canonical"
-        href="https://jpitsolution.github.io/jpitsolution/">
+  <!-- Canonical: URL ของหน้า GitHub Pages นี้ -->
+  <link rel="canonical" href="https://jpitsolution.github.io/jpitsolution/">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="th_TH">
-  <meta property="og:site_name" content="J&P IT Solution">
-  <meta property="og:title" content="J&P IT Solution | IT Solutions for Business">
-  <meta property="og:description" content="โซลูชันระบบไอทีสำหรับองค์กร ตั้งแต่ Network, Server, Security, Backup จนถึง Business Application">
-  <meta property="og:url"
-        content="https://jpitsolution.github.io/jpitsolution/">
+  <meta property="og:site_name" content="J&P IT Technical Hub">
+  <meta property="og:title" content="J&P IT Technical Hub | Technical Knowledge & Resources">
+  <meta property="og:description" content="Technical resources for IT professionals. Explore infrastructure, servers, cybersecurity, data protection and business technology.">
+  <meta property="og:url" content="https://jpitsolution.github.io/jpitsolution/">
 
   <link rel="icon" href="https://www.jpitsolution.com/assets/images/favicon.ico">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "J&P IT Solution Co., Ltd.",
-    "alternateName": "บริษัท เจแอนด์พีไอทีโซลูชั่น จำกัด",
-    "url": "https://www.jpitsolution.com/",
-    "sameAs": [
-      "https://github.com/jpitsolution",
-      "https://www.facebook.com/jpitsolutionss"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+66-95-360-9022",
-      "contactType": "sales",
-      "areaServed": "TH",
-      "availableLanguage": ["Thai"]
-    }
+    "@type": "WebSite",
+    "name": "J&P IT Technical Hub",
+    "url": "https://jpitsolution.github.io/jpitsolution/",
+    "description": "Technical knowledge and resources for IT professionals.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "J&P IT Solution Co., Ltd.",
+      "url": "https://www.jpitsolution.com/"
+    },
+    "inLanguage": "th-TH"
   }
   </script>
 
   <style>
     :root {
-      --navy: #0b1730;
-      --navy2: #12294b;
-      --blue: #1688f8;
-      --cyan: #32d5e8;
-      --text: #17253b;
-      --muted: #617087;
-      --light: #f4f8fc;
-      --white: #fff;
-      --border: #e1e9f2;
+      --bg: #10130f;
+      --bg-soft: #161a14;
+      --surface: #1b2019;
+      --surface-hover: #22291f;
+      --line: #30372b;
+      --text: #edf1e8;
+      --muted: #a0aa98;
+      --green: #c4f36a;
+      --green-dark: #91c63b;
+      --cyan: #6fe0d0;
+      --mono: "IBM Plex Mono", monospace;
+      --font: "Prompt", sans-serif;
+      --container: 1160px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
 
     body {
       margin: 0;
-      font-family: "Prompt", sans-serif;
+      font-family: var(--font);
       color: var(--text);
+      background: var(--bg);
       line-height: 1.8;
-      background: #fff;
+      -webkit-font-smoothing: antialiased;
     }
 
-    a { color: inherit; text-decoration: none; }
+    body::selection {
+      background: var(--green);
+      color: var(--bg);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--green);
+      outline-offset: 4px;
+    }
 
     .container {
-      width: min(1120px, 92%);
-      margin: auto;
+      width: min(var(--container), 90%);
+      margin-inline: auto;
     }
 
-    .topbar {
-      background: #071124;
-      color: #dce8fa;
-      font-size: 13px;
-      padding: 7px 0;
+    .mono {
+      font-family: var(--mono);
     }
 
-    .topbar .container {
+    .muted {
+      color: var(--muted);
+    }
+
+    .green {
+      color: var(--green);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--green);
+      font: 500 11px/1.6 var(--mono);
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 22px;
+      height: 1px;
+      background: var(--green);
+    }
+
+    .topline {
+      background: #0b0e0a;
+      border-bottom: 1px solid var(--line);
+      font: 11px/1.5 var(--mono);
+      color: var(--muted);
+    }
+
+    .topline-inner {
+      min-height: 35px;
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
+      gap: 15px;
     }
 
-    header {
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 12px rgba(196, 243, 106, .5);
+    }
+
+    /* Navigation */
+
+    .header {
       position: sticky;
       top: 0;
-      z-index: 10;
-      background: rgba(255,255,255,.96);
-      border-bottom: 1px solid var(--border);
+      z-index: 100;
+      background: rgba(16, 19, 15, .94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
     }
 
     .nav {
-      min-height: 74px;
+      min-height: 76px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      justify-content: space-between;
+      gap: 28px;
     }
 
     .brand {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--navy);
-      line-height: 1.3;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
     }
 
-    .brand span { color: var(--blue); }
+    .brand-mark {
+      width: 39px;
+      height: 39px;
+      display: grid;
+      place-items: center;
+      background: var(--green);
+      color: var(--bg);
+      font: 600 14px var(--mono);
+      border-radius: 4px;
+    }
 
-    .navlinks {
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.35;
+    }
+
+    .brand-name {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -.3px;
+    }
+
+    .brand-sub {
+      font: 9px var(--mono);
+      color: var(--muted);
+      letter-spacing: 1.1px;
+      margin-top: 4px;
+    }
+
+    .nav-links {
       display: flex;
       align-items: center;
-      gap: 22px;
-      font-size: 14px;
+      gap: 27px;
+      font-size: 13px;
     }
 
-    .navlinks a:hover { color: var(--blue); }
+    .nav-links > a:not(.nav-cta) {
+      color: #c3cbbb;
+      transition: color .2s;
+    }
+
+    .nav-links > a:not(.nav-cta):hover {
+      color: var(--green);
+    }
+
+    .nav-cta {
+      padding: 10px 15px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      font-size: 12px;
+      transition: .2s;
+    }
+
+    .nav-cta:hover {
+      border-color: var(--green);
+      color: var(--green);
+    }
+
+    /* Hero */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0 82px;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(rgba(196, 243, 106, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(196, 243, 106, .035) 1px, transparent 1px),
+        radial-gradient(ellipse at 82% 35%, rgba(125, 169, 63, .10), transparent 42%),
+        var(--bg);
+      background-size: 44px 44px, 44px 44px, auto, auto;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      margin: 24px 0 20px;
+      max-width: 700px;
+      font-size: clamp(36px, 5vw, 62px);
+      line-height: 1.27;
+      letter-spacing: -1.7px;
+      font-weight: 600;
+    }
+
+    .hero h1 .accent {
+      color: var(--green);
+    }
+
+    .hero-description {
+      max-width: 620px;
+      margin: 0;
+      color: #b1baaa;
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
 
     .btn {
-      display: inline-block;
-      padding: 11px 21px;
-      border-radius: 9px;
+      min-height: 47px;
+      padding: 11px 19px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 4px;
+      font-size: 13px;
       font-weight: 500;
       transition: .2s;
     }
 
     .btn-primary {
-      color: white;
-      background: var(--blue);
-      box-shadow: 0 7px 20px rgba(22,136,248,.22);
+      background: var(--green);
+      color: #13180e;
     }
 
-    .btn-primary:hover { background: #0873d8; }
-
-    .btn-outline {
-      color: white;
-      border: 1px solid rgba(255,255,255,.45);
+    .btn-primary:hover {
+      background: #d5ff91;
+      transform: translateY(-2px);
     }
 
-    .hero {
-      position: relative;
-      overflow: hidden;
-      color: white;
-      background:
-        radial-gradient(ellipse at 85% 20%, rgba(50,213,232,.2), transparent 32%),
-        linear-gradient(125deg, var(--navy), var(--navy2));
-      padding: 100px 0 95px;
+    .btn-secondary {
+      border: 1px solid #444c3e;
+      color: var(--text);
     }
 
-    .hero:after {
-      content: "";
-      position: absolute;
-      width: 420px;
-      height: 420px;
-      border: 1px solid rgba(50,213,232,.18);
-      border-radius: 50%;
-      right: -100px;
-      bottom: -220px;
-      box-shadow: 0 0 0 45px rgba(50,213,232,.035),
-                  0 0 0 90px rgba(50,213,232,.025);
+    .btn-secondary:hover {
+      border-color: var(--green);
+      color: var(--green);
     }
 
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 790px;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      color: var(--cyan);
-      background: rgba(50,213,232,.1);
-      border: 1px solid rgba(50,213,232,.25);
-      padding: 5px 13px;
-      border-radius: 30px;
-      font-size: 13px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: clamp(32px, 5vw, 52px);
-      line-height: 1.35;
-      margin: 0 0 20px;
-      letter-spacing: -.5px;
-    }
-
-    .hero p {
-      max-width: 720px;
-      color: #d1deef;
-      font-size: 16px;
-      margin: 0 0 28px;
-    }
-
-    .hero-actions {
+    .hero-meta {
       display: flex;
-      gap: 12px;
+      align-items: center;
+      gap: 22px;
       flex-wrap: wrap;
+      margin-top: 35px;
+      padding-top: 23px;
+      border-top: 1px solid var(--line);
+      font: 10px var(--mono);
+      color: var(--muted);
     }
 
-    section { padding: 76px 0; }
-
-    .section-head {
-      max-width: 760px;
-      margin: 0 auto 38px;
-      text-align: center;
+    .hero-meta span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .section-head h2 {
-      color: var(--navy);
-      font-size: clamp(25px, 3vw, 34px);
-      line-height: 1.45;
-      margin: 0 0 12px;
+    /* Terminal visual */
+
+    .terminal {
+      position: relative;
+      border: 1px solid #394333;
+      background: rgba(17, 22, 15, .96);
+      box-shadow: 0 25px 80px rgba(0, 0, 0, .25);
     }
 
-    .section-head p { color: var(--muted); margin: 0; }
+    .terminal-head {
+      min-height: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 0 15px;
+      border-bottom: 1px solid var(--line);
+      background: #191e16;
+      font: 10px var(--mono);
+      color: var(--muted);
+    }
 
-    .services { background: var(--light); }
+    .terminal-dots {
+      display: flex;
+      gap: 5px;
+    }
 
-    .grid {
+    .terminal-dots span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #4d5646;
+    }
+
+    .terminal-dots span:first-child {
+      background: var(--green);
+    }
+
+    .terminal-body {
+      padding: 23px 21px 25px;
+    }
+
+    .terminal-comment {
+      color: #78866c;
+      font: 11px/1.9 var(--mono);
+    }
+
+    .terminal-command {
+      margin: 12px 0 20px;
+      font: 12px/2 var(--mono);
+      overflow-wrap: anywhere;
+    }
+
+    .terminal-command .prompt {
+      color: var(--green);
+    }
+
+    .terminal-command .cmd {
+      color: #e2e9d9;
+    }
+
+    .terminal-divider {
+      height: 1px;
+      background: var(--line);
+      margin: 20px 0;
+    }
+
+    .terminal-info {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 20px;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
     }
 
-    .service-card {
-      padding: 25px;
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 15px;
-      transition: transform .2s, box-shadow .2s;
+    .terminal-stat {
+      padding: 13px;
+      background: #1c2318;
+      border: 1px solid #30392a;
     }
 
-    .service-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 14px 34px rgba(20,48,80,.08);
+    .terminal-stat small {
+      display: block;
+      font: 10px var(--mono);
+      color: var(--muted);
     }
 
-    .service-icon {
+    .terminal-stat strong {
+      display: block;
+      margin-top: 7px;
+      color: var(--green);
+      font: 500 17px var(--mono);
+    }
+
+    .terminal-footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 20px;
+      font: 9px var(--mono);
+      color: #839078;
+    }
+
+    /* Category strip */
+
+    .topic-strip {
+      border-bottom: 1px solid var(--line);
+      background: #141812;
+    }
+
+    .topic-strip-inner {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .topic-item {
+      min-height: 83px;
+      padding: 20px 17px;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      border-right: 1px solid var(--line);
+    }
+
+    .topic-item:first-child {
+      border-left: 1px solid var(--line);
+    }
+
+    .topic-number {
+      color: var(--green);
+      font: 12px var(--mono);
+    }
+
+    .topic-item strong {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .topic-item small {
+      display: block;
+      margin-top: 3px;
+      font: 9px var(--mono);
+      color: var(--muted);
+    }
+
+    /* General sections */
+
+    .section {
+      padding: 88px 0;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 25px;
+      margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+      margin: 13px 0 8px;
+      font-size: clamp(26px, 3.5vw, 37px);
+      line-height: 1.4;
+      letter-spacing: -.6px;
+      font-weight: 500;
+    }
+
+    .section-heading p {
+      max-width: 630px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .text-link {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      width: 46px;
-      height: 46px;
-      border-radius: 12px;
-      color: #0879dc;
-      background: #e9f5ff;
-      font-size: 22px;
-      margin-bottom: 13px;
+      gap: 8px;
+      color: var(--green);
+      font-size: 12px;
+      white-space: nowrap;
     }
 
-    .service-card h3 {
-      margin: 0 0 8px;
-      font-size: 18px;
-      color: var(--navy);
-      line-height: 1.5;
+    .text-link:hover {
+      color: #e1ffb3;
     }
 
-    .service-card p {
-      color: var(--muted);
-      font-size: 14px;
+    /* Knowledge cards */
+
+    .knowledge-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .knowledge-card {
+      min-height: 235px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      transition: border-color .2s, background .2s, transform .2s;
+    }
+
+    .knowledge-card:hover {
+      background: var(--surface-hover);
+      border-color: #65764d;
+      transform: translateY(-3px);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-index {
+      font: 11px var(--mono);
+      color: var(--green);
+    }
+
+    .card-tag {
+      padding: 4px 7px;
+      border: 1px solid #394333;
+      border-radius: 3px;
+      color: #b0bd9f;
+      font: 9px var(--mono);
+    }
+
+    .card-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      margin-top: 23px;
+      border: 1px solid #424d36;
+      border-radius: 5px;
+      color: var(--green);
+      font: 18px var(--mono);
+    }
+
+    .knowledge-card h3 {
+      margin: 15px 0 8px;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .knowledge-card p {
       margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.9;
     }
+
+    .card-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 22px;
+      font: 10px var(--mono);
+      color: var(--muted);
+    }
+
+    .card-arrow {
+      color: var(--green);
+      font-size: 16px;
+      transition: transform .2s;
+    }
+
+    .knowledge-card:hover .card-arrow {
+      transform: translateX(4px);
+    }
+
+    /* Workflow */
+
+    .workflow {
+      background: #151a13;
+      border-block: 1px solid var(--line);
+    }
+
+    .workflow-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .workflow-intro h2 {
+      margin: 15px 0;
+      font-size: clamp(28px, 3.5vw, 39px);
+      line-height: 1.4;
+      font-weight: 500;
+    }
+
+    .workflow-intro p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .workflow-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .workflow-item {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      gap: 15px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .workflow-number {
+      color: var(--green);
+      font: 12px var(--mono);
+      padding-top: 4px;
+    }
+
+    .workflow-item h3 {
+      margin: 0 0 5px;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .workflow-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.9;
+    }
+
+    /* Resource links */
+
+    .resources-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 17px;
+    }
+
+    .resource-panel {
+      padding: 28px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 5px;
+    }
+
+    .resource-label {
+      color: var(--green);
+      font: 10px var(--mono);
+      letter-spacing: 1px;
+    }
+
+    .resource-panel h3 {
+      margin: 12px 0 9px;
+      font-size: 21px;
+      font-weight: 500;
+    }
+
+    .resource-panel > p {
+      color: var(--muted);
+      font-size: 12px;
+      margin: 0 0 22px;
+    }
+
+    .resource-link {
+      min-height: 49px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+      transition: color .2s;
+    }
+
+    .resource-link:hover {
+      color: var(--green);
+    }
+
+    .resource-link span:last-child {
+      color: var(--green);
+      font: 13px var(--mono);
+    }
+
+    /* About */
 
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 55px;
+      gap: 65px;
       align-items: center;
     }
 
-    .about h2 {
-      font-size: 32px;
+    .about-copy h2 {
+      margin: 14px 0;
+      font-size: clamp(27px, 3.5vw, 38px);
       line-height: 1.45;
-      color: var(--navy);
-      margin: 0 0 17px;
-    }
-
-    .about p { color: var(--muted); }
-
-    .checklist {
-      padding: 0;
-      list-style: none;
-    }
-
-    .checklist li {
-      padding: 7px 0;
-    }
-
-    .checklist li:before {
-      content: "✓";
-      color: #0789d9;
-      font-weight: 700;
-      margin-right: 10px;
-    }
-
-    .feature-panel {
-      background: linear-gradient(145deg, #0d2040, #173e69);
-      color: white;
-      border-radius: 20px;
-      padding: 34px;
-      box-shadow: 0 20px 50px rgba(11,23,48,.13);
-    }
-
-    .feature-panel h3 { margin-top: 0; font-size: 22px; }
-
-    .feature-panel p { color: #d4e2f3; }
-
-    .feature-link {
-      display: block;
-      padding: 12px 0;
-      border-bottom: 1px solid rgba(255,255,255,.14);
-      color: #eaf7ff;
-    }
-
-    .feature-link:last-child { border-bottom: 0; }
-
-    .resources { background: var(--light); }
-
-    .resource-card {
-      padding: 25px;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: white;
-    }
-
-    .resource-card h3 { margin: 0 0 8px; color: var(--navy); }
-    .resource-card p { color: var(--muted); font-size: 14px; }
-
-    .resource-card a {
-      color: #0879dc;
       font-weight: 500;
     }
 
-    .contact {
-      background: linear-gradient(125deg, #0b1730, #16375d);
-      color: white;
-      text-align: center;
-    }
-
-    .contact h2 {
-      font-size: clamp(26px, 4vw, 36px);
-      margin: 0 0 10px;
-    }
-
-    .contact p {
-      color: #d1deef;
-      margin: 0 auto 25px;
-      max-width: 700px;
-    }
-
-    .contact-links {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    footer {
-      background: #071124;
-      color: #b9c8dc;
-      padding: 25px 0;
+    .about-copy p {
+      color: var(--muted);
       font-size: 13px;
     }
 
-    footer .container {
+    .about-note {
+      margin-top: 23px;
+      padding: 16px 18px;
+      border-left: 2px solid var(--green);
+      background: #191f15;
+      color: #c1ccb7;
+      font-size: 12px;
+    }
+
+    .about-panel {
+      padding: 28px;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, rgba(196, 243, 106, .04), transparent 65%),
+        var(--surface);
+    }
+
+    .about-panel-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--line);
+      font: 10px var(--mono);
+      color: var(--muted);
+    }
+
+    .about-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 18px;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 12px;
+    }
+
+    .about-row:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .about-row span:last-child {
+      color: var(--green);
+      font: 10px var(--mono);
+      text-align: right;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 66px 0;
+      background: var(--green);
+      color: #171c11;
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 35px;
+    }
+
+    .cta h2 {
+      margin: 0 0 8px;
+      font-size: clamp(25px, 3.5vw, 36px);
+      line-height: 1.4;
+      font-weight: 600;
+    }
+
+    .cta p {
+      margin: 0;
+      font-size: 13px;
+      color: #39472b;
+    }
+
+    .cta .btn {
+      flex-shrink: 0;
+      background: #151a12;
+      color: white;
+    }
+
+    .cta .btn:hover {
+      background: #293323;
+    }
+
+    /* Footer */
+
+    .footer {
+      padding: 37px 0 20px;
+      background: #0b0e0a;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 35px;
+      padding-bottom: 30px;
+    }
+
+    .footer-brand p {
+      max-width: 350px;
+      margin: 15px 0 0;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 25px;
       flex-wrap: wrap;
-      gap: 12px;
+      font-size: 11px;
+      color: #c3cbbb;
     }
 
-    footer a { color: white; }
-
-    @media (max-width: 850px) {
-      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .about-grid { grid-template-columns: 1fr; gap: 30px; }
-      .navlinks { gap: 12px; }
+    .footer-links a:hover {
+      color: var(--green);
     }
 
-    @media (max-width: 600px) {
-      .topbar .container { justify-content: center; text-align: center; }
-      .nav { min-height: 65px; }
-      .navlinks a:not(.btn) { display: none; }
-      .brand { font-size: 17px; }
-      .hero { padding: 72px 0; }
-      section { padding: 55px 0; }
-      .grid { grid-template-columns: 1fr; }
-      .service-card { padding: 22px; }
-      .feature-panel { padding: 25px; }
-      footer .container { justify-content: center; text-align: center; }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      padding-top: 17px;
+      border-top: 1px solid var(--line);
+      color: #7f8976;
+      font: 9px var(--mono);
+    }
+
+    /* Responsive */
+
+    @media (max-width: 950px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .terminal {
+        max-width: 620px;
+      }
+
+      .knowledge-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .workflow-grid {
+        gap: 35px;
+      }
+
+      .nav-links {
+        gap: 16px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        width: 90%;
+      }
+
+      .topline-inner {
+        justify-content: center;
+        min-height: 33px;
+      }
+
+      .topline-extra {
+        display: none;
+      }
+
+      .nav {
+        min-height: 66px;
+        gap: 12px;
+      }
+
+      .brand-mark {
+        width: 35px;
+        height: 35px;
+      }
+
+      .brand-name {
+        font-size: 14px;
+      }
+
+      .brand-sub {
+        font-size: 8px;
+      }
+
+      .nav-links {
+        gap: 0;
+      }
+
+      .nav-links > a:not(.nav-cta) {
+        display: none;
+      }
+
+      .nav-cta {
+        padding: 8px 10px;
+        font-size: 10px;
+      }
+
+      .hero {
+        padding: 65px 0 52px;
+      }
+
+      .hero h1 {
+        font-size: clamp(34px, 9vw, 46px);
+        letter-spacing: -.9px;
+      }
+
+      .hero-description {
+        font-size: 13px;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+      }
+
+      .hero-actions .btn {
+        flex: 1;
+        padding-inline: 12px;
+        font-size: 11px;
+      }
+
+      .hero-meta {
+        gap: 12px;
+        font-size: 9px;
+      }
+
+      .terminal-body {
+        padding: 18px 14px;
+      }
+
+      .terminal-command {
+        font-size: 10px;
+      }
+
+      .terminal-stat {
+        padding: 10px;
+      }
+
+      .terminal-stat strong {
+        font-size: 14px;
+      }
+
+      .topic-strip-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .topic-item {
+        min-height: 70px;
+        padding: 14px 10px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .topic-item:nth-child(odd) {
+        border-left: 1px solid var(--line);
+      }
+
+      .topic-item:nth-child(even) {
+        border-right: 1px solid var(--line);
+      }
+
+      .topic-item strong {
+        font-size: 11px;
+      }
+
+      .topic-item small {
+        font-size: 8px;
+      }
+
+      .section {
+        padding: 58px 0;
+      }
+
+      .section-heading {
+        align-items: start;
+        flex-direction: column;
+        gap: 13px;
+        margin-bottom: 25px;
+      }
+
+      .section-heading h2 {
+        font-size: 28px;
+      }
+
+      .knowledge-grid,
+      .resources-grid,
+      .about-grid,
+      .workflow-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .knowledge-grid {
+        gap: 12px;
+      }
+
+      .knowledge-card {
+        min-height: 215px;
+      }
+
+      .workflow-grid,
+      .about-grid {
+        gap: 30px;
+      }
+
+      .resource-panel {
+        padding: 22px;
+      }
+
+      .about-panel {
+        padding: 21px;
+      }
+
+      .cta {
+        padding: 43px 0;
+      }
+
+      .cta-inner {
+        align-items: start;
+        flex-direction: column;
+        gap: 22px;
+      }
+
+      .footer-top {
+        flex-direction: column;
+      }
+
+      .footer-links {
+        gap: 18px;
+      }
+
+      .footer-bottom {
+        font-size: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="topbar">
-    <div class="container">
-      <span>J&P IT Solution Co., Ltd.</span>
-      <span>IT Solutions for Business in Thailand</span>
+
+  <!-- Top Status Bar -->
+  <div class="topline">
+    <div class="container topline-inner">
+      <span class="status">
+        <span class="status-dot"></span>
+        J&P TECHNICAL RESOURCE HUB
+      </span>
+      <span class="topline-extra">INFRASTRUCTURE / SECURITY / ENGINEERING</span>
     </div>
   </div>
 
-  <header>
+  <!-- Navigation -->
+  <header class="header">
     <nav class="container nav" aria-label="เมนูหลัก">
-      <a class="brand" href="#home" aria-label="J&P IT Solution Home">
-        J&amp;P <span>IT SOLUTION</span>
+
+      <a class="brand" href="#home" aria-label="J&P IT Technical Hub">
+        <span class="brand-mark">J&amp;P</span>
+        <span class="brand-copy">
+          <span class="brand-name">IT Technical Hub</span>
+          <span class="brand-sub">KNOWLEDGE / RESOURCES</span>
+        </span>
       </a>
 
-      <div class="navlinks">
-        <a href="#services">บริการ</a>
-        <a href="#about">เกี่ยวกับเรา</a>
-        <a href="#resources">ข้อมูลเพิ่มเติม</a>
-        <a class="btn btn-primary"
-           href="https://www.jpitsolution.com/contact">
-          ติดต่อเรา
+      <div class="nav-links">
+        <a href="#knowledge">Knowledge</a>
+        <a href="#workflow">IT Guides</a>
+        <a href="#resources">Resources</a>
+        <a class="nav-cta"
+           href="https://www.jpitsolution.com/">
+          Main Website ↗
         </a>
       </div>
+
     </nav>
   </header>
 
   <main>
+
+    <!-- Hero -->
     <section class="hero" id="home">
-      <div class="container">
+      <div class="container hero-grid">
+
         <div class="hero-content">
-          <span class="eyebrow">IT SOLUTIONS FOR BUSINESS</span>
+          <span class="eyebrow">TECHNICAL KNOWLEDGE / 2026</span>
 
           <h1>
-            โซลูชันระบบ IT สำหรับองค์กร<br>
-            เพื่อการทำงานที่มีประสิทธิภาพ
+            Technology that<br>
+            keeps business<br>
+            <span class="accent">moving forward.</span>
           </h1>
 
-          <p>
-            J&amp;P IT Solution ให้บริการด้านโครงสร้างพื้นฐานระบบไอที
-            ตั้งแต่ Network, Server, Virtualization, Backup และ Network Security
-            ไปจนถึง CCTV และการพัฒนา Business Application
-            เพื่อรองรับความต้องการขององค์กรและธุรกิจ
+          <p class="hero-description">
+            ศูนย์รวมความรู้ทางเทคนิคสำหรับคนทำงาน IT
+            ตั้งแต่การดูแลระบบ Server และ Database
+            ไปจนถึง Network Security, Data Protection
+            และเทคโนโลยีที่ช่วยให้ระบบธุรกิจทำงานได้อย่างมั่นคง
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary"
-               href="https://www.jpitsolution.com/">
-              เว็บไซต์บริษัท
+            <a class="btn btn-primary" href="#knowledge">
+              Explore Knowledge <span>↘</span>
             </a>
-            <a class="btn btn-outline"
-               href="https://www.jpitsolution.com/portfolio">
-              ดูตัวอย่างผลงาน
+
+            <a class="btn btn-secondary"
+               href="https://www.jpitsolution.com/">
+              Visit jpitsolution.com <span>↗</span>
             </a>
           </div>
+
+          <div class="hero-meta">
+            <span>01 / TECHNICAL GUIDES</span>
+            <span>02 / IT RESOURCES</span>
+            <span>03 / OPEN SOURCE</span>
+          </div>
         </div>
+
+        <!-- Terminal-inspired visual -->
+        <div class="terminal" aria-label="ตัวอย่างหน้าจอคำสั่งระบบ IT">
+
+          <div class="terminal-head">
+            <div class="terminal-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span>technical-hub.sh</span>
+            <span>LOCAL / SYSTEM</span>
+          </div>
+
+          <div class="terminal-body">
+
+            <div class="terminal-comment">
+              # Infrastructure status overview
+            </div>
+
+            <div class="terminal-command">
+              <div>
+                <span class="prompt">$</span>
+                <span class="cmd"> systemctl status infrastructure</span>
+              </div>
+              <div class="green">● Knowledge resources available</div>
+              <div class="muted">Documentation and technical references</div>
+            </div>
+
+            <div class="terminal-divider"></div>
+
+            <div class="terminal-comment">
+              # Explore technical domains
+            </div>
+
+            <div class="terminal-command">
+              <div><span class="prompt">01</span> / server &amp; database</div>
+              <div><span class="prompt">02</span> / network &amp; security</div>
+              <div><span class="prompt">03</span> / backup &amp; recovery</div>
+              <div><span class="prompt">04</span> / automation &amp; tools</div>
+            </div>
+
+            <div class="terminal-info">
+              <div class="terminal-stat">
+                <small>KNOWLEDGE</small>
+                <strong>TECH</strong>
+              </div>
+              <div class="terminal-stat">
+                <small>FOCUS</small>
+                <strong>IT / B2B</strong>
+              </div>
+            </div>
+
+            <div class="terminal-footer">
+              <span>J&amp;P IT TECHNICAL HUB</span>
+              <span>END OF OUTPUT_</span>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="services" id="services">
+    <!-- Topic Strip -->
+    <div class="topic-strip">
+      <div class="container topic-strip-inner">
+
+        <div class="topic-item">
+          <span class="topic-number">01</span>
+          <div>
+            <strong>Infrastructure</strong>
+            <small>SERVER / NETWORK</small>
+          </div>
+        </div>
+
+        <div class="topic-item">
+          <span class="topic-number">02</span>
+          <div>
+            <strong>Cybersecurity</strong>
+            <small>PROTECTION / ACCESS</small>
+          </div>
+        </div>
+
+        <div class="topic-item">
+          <span class="topic-number">03</span>
+          <div>
+            <strong>Data Protection</strong>
+            <small>BACKUP / RECOVERY</small>
+          </div>
+        </div>
+
+        <div class="topic-item">
+          <span class="topic-number">04</span>
+          <div>
+            <strong>Business Systems</strong>
+            <small>DATABASE / SOFTWARE</small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Knowledge Categories -->
+    <section class="section" id="knowledge">
       <div class="container">
-        <div class="section-head">
-          <h2>บริการด้าน IT สำหรับองค์กร</h2>
-          <p>
-            ครอบคลุมระบบโครงสร้างพื้นฐาน ความปลอดภัยของเครือข่าย
-            การสำรองข้อมูล และซอฟต์แวร์สำหรับการดำเนินธุรกิจ
-          </p>
-        </div>
 
-        <div class="grid">
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">⌘</div>
-            <h3>Network Infrastructure</h3>
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">01 / KNOWLEDGE BASE</span>
+            <h2>Explore technical domains.</h2>
             <p>
-              ระบบเครือข่ายองค์กร การติดตั้ง LAN การเดินสายสัญญาณ
-              และการติดตั้งอุปกรณ์เครือข่าย
+              เลือกหมวดหมู่เทคโนโลยีเพื่อศึกษาหลักการทำงาน
+              แนวทางดูแลระบบ และแหล่งข้อมูลสำหรับผู้ดูแลระบบ IT
             </p>
-          </article>
+          </div>
 
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">▤</div>
-            <h3>Server Infrastructure</h3>
-            <p>
-              ระบบ Server และ Storage สำหรับรองรับแอปพลิเคชัน
-              และบริการสำคัญขององค์กร
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">◈</div>
-            <h3>Virtualization</h3>
-            <p>
-              โซลูชัน VMware และ Nutanix สำหรับระบบ Virtual Machine
-              และโครงสร้างพื้นฐานแบบ Hyperconverged
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">⟳</div>
-            <h3>Backup &amp; Recovery</h3>
-            <p>
-              โซลูชัน Veeam และ NAKIVO สำหรับการสำรองข้อมูล
-              และสนับสนุนการกู้คืนระบบเมื่อเกิดเหตุขัดข้อง
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">⛨</div>
-            <h3>Firewall &amp; Network Security</h3>
-            <p>
-              FortiGate Firewall, VPN และการจัดการนโยบายความปลอดภัย
-              ของเครือข่ายองค์กร
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">▣</div>
-            <h3>CCTV Solution</h3>
-            <p>
-              บริการติดตั้งระบบกล้องวงจรปิด Analog และ IP Camera
-              พร้อมเดินสายและติดตั้งระบบบันทึกภาพ
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">⌘</div>
-            <h3>Business Application Development</h3>
-            <p>
-              พัฒนาระบบ Sales Management, Dashboard, CRM
-              และระบบบริหารงานภายในให้เหมาะกับกระบวนการธุรกิจ
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">◎</div>
-            <h3>Managed Infrastructure Service</h3>
-            <p>
-              บริการ MA Support สำหรับดูแลระบบ IT Infrastructure
-              พร้อม Service Report ออนไลน์และ Customer Report Portal
-            </p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">▧</div>
-            <h3>Computer &amp; IT Equipment</h3>
-            <p>
-              บริการจัดหาและจัดส่งคอมพิวเตอร์ อุปกรณ์สำนักงาน
-              และอุปกรณ์ IT ตามความต้องการขององค์กร
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="container about-grid">
-        <div>
-          <span class="eyebrow" style="background:#eaf6ff;color:#0879dc;border-color:#d5ebff">
-            ABOUT J&amp;P IT SOLUTION
-          </span>
-
-          <h2>เทคโนโลยีที่ตอบโจทย์การทำงานของธุรกิจ</h2>
-
-          <p>
-            J&amp;P IT Solution Co., Ltd. ให้บริการด้านเทคโนโลยีสารสนเทศ
-            สำหรับองค์กรและธุรกิจในประเทศไทย โดยครอบคลุมทั้งระบบเครือข่าย
-            เซิร์ฟเวอร์ ระบบสำรองข้อมูล ความปลอดภัยไซเบอร์
-            และการพัฒนาซอฟต์แวร์เพื่อสนับสนุนการทำงาน
-          </p>
-
-          <ul class="checklist">
-            <li>โซลูชันโครงสร้างพื้นฐานระบบ IT</li>
-            <li>ระบบเครือข่ายและความปลอดภัย</li>
-            <li>ระบบสำรองข้อมูลและ Virtualization</li>
-            <li>ซอฟต์แวร์และระบบรายงานสำหรับธุรกิจ</li>
-          </ul>
-
-          <a class="btn btn-primary"
-             href="https://www.jpitsolution.com/">
-            อ่านข้อมูลเพิ่มเติม
-          </a>
-        </div>
-
-        <div class="feature-panel">
-          <h3>J&amp;P IT Solution Online</h3>
-          <p>
-            ดูรายละเอียดบริการ ตัวอย่างผลงาน และบทความความรู้
-            เกี่ยวกับระบบไอทีได้จากเว็บไซต์บริษัท
-          </p>
-
-          <a class="feature-link"
-             href="https://www.jpitsolution.com/">
-            ↗ เว็บไซต์หลักของบริษัท
-          </a>
-          <a class="feature-link"
-             href="https://www.jpitsolution.com/portfolio">
-            ↗ ตัวอย่างผลงานและโครงการ
-          </a>
-          <a class="feature-link"
+          <a class="text-link"
              href="https://www.jpitsolution.com/blog/blog">
-            ↗ บทความความรู้ด้าน IT
+            Visit IT Blog <span>↗</span>
           </a>
-          <a class="feature-link"
-             href="https://github.com/jpitsolution">
-            ↗ GitHub ของ J&amp;P IT Solution
+        </div>
+
+        <div class="knowledge-grid">
+
+          <a class="knowledge-card"
+             href="https://www.jpitsolution.com/blog/blog">
+            <div class="card-top">
+              <span class="card-index">DOMAIN_01</span>
+              <span class="card-tag">INFRASTRUCTURE</span>
+            </div>
+            <div class="card-icon" aria-hidden="true">$_</div>
+            <h3>Windows Server &amp; Systems</h3>
+            <p>
+              เรียนรู้การจัดการ Server, Active Directory,
+              File Sharing, Permissions และระบบสำหรับองค์กร
+            </p>
+            <div class="card-bottom">
+              <span>SERVER ADMINISTRATION</span>
+              <span class="card-arrow">↗</span>
+            </div>
           </a>
+
+          <a class="knowledge-card"
+             href="https://www.jpitsolution.com/blog/blog">
+            <div class="card-top">
+              <span class="card-index">DOMAIN_02</span>
+              <span class="card-tag">DATABASE</span>
+            </div>
+            <div class="card-icon" aria-hidden="true">DB</div>
+            <h3>SQL Server &amp; Database</h3>
+            <p>
+              พื้นฐานฐานข้อมูล SQL การจัดการ Query,
+              Database Administration, Security และ Maintenance
+            </p>
+            <div class="card-bottom">
+              <span>DATA MANAGEMENT</span>
+              <span class="card-arrow">↗</span>
+            </div>
+          </a>
+
+          <a class="knowledge-card"
+             href="https://www.jpitsolution.com/blog/blog">
+            <div class="card-top">
+              <span class="card-index">DOMAIN_03</span>
+              <span class="card-tag">NETWORK</span>
+            </div>
+            <div class="card-icon" aria-hidden="true">⌘</div>
+            <h3>Network &amp; Connectivity</h3>
+            <p>
+              ทำความเข้าใจ LAN, VLAN, Routing, Switching,
+              DNS, DHCP และการแก้ไขปัญหาเครือข่าย
+            </p>
+            <div class="card-bottom">
+              <span>NETWORK ENGINEERING</span>
+              <span class="card-arrow">↗</span>
+            </div>
+          </a>
+
+          <a class="knowledge-card"
+             href="https://www.jpitsolution.com/blog/blog">
+            <div class="card-top">
+              <span class="card-index">DOMAIN_04</span>
+              <span class="card-tag">CYBERSECURITY</span>
+            </div>
+            <div class="card-icon" aria-hidden="true">#</div>
+            <h3>Firewall &amp; Security</h3>
+            <p>
+              แนวทางดูแล Firewall, VPN, Access Control,
+              Network Segmentation และความปลอดภัยของระบบ
+            </p>
+            <div class="card-bottom">
+              <span>NETWORK DEFENSE</span>
+              <span class="card-arrow">↗</span>
+            </div>
+          </a>
+
+          <a class="knowledge-card"
+             href="https://www.jpitsolution.com/blog/blog">
+            <div class="card-top">
+              <span class="card-index">DOMAIN_05</span>
+              <span class="card-tag">DATA PROTECTION</span>
+            </div>
+            <div class="card-icon" aria-hidden="true">↻</div>
+            <h3>Backup &amp; Disaster Recovery</h3>
+            <p>
+              แนวคิดการสำรองข้อมูล การทดสอบ Restore,
+              Recovery Planning และการลดความเสี่ยงข้อมูลสูญหาย
+            </p>
+            <div class="card-bottom">
+              <span>BACKUP STRATEGY</span>
+              <span class="card-arrow">↗</span>
+            </div>
+          </a>
+
+          <a class="knowledge-card"
+             href="https://www.jpitsolution.com/blog/blog">
+            <div class="card-top">
+              <span class="card-index">DOMAIN_06</span>
+              <span class="card-tag">VIRTUALIZATION</span>
+            </div>
+            <div class="card-icon" aria-hidden="true">[ ]</div>
+            <h3>Virtualization &amp; Cloud</h3>
+            <p>
+              พื้นฐาน Virtual Machines, Hypervisors,
+              Resource Allocation และโครงสร้างพื้นฐานเสมือน
+            </p>
+            <div class="card-bottom">
+              <span>VIRTUAL SYSTEMS</span>
+              <span class="card-arrow">↗</span>
+            </div>
+          </a>
+
         </div>
       </div>
     </section>
 
-    <section class="resources" id="resources">
-      <div class="container">
-        <div class="section-head">
-          <h2>แหล่งข้อมูลและผลงานด้าน IT</h2>
+    <!-- Practical Workflow -->
+    <section class="section workflow" id="workflow">
+      <div class="container workflow-grid">
+
+        <div class="workflow-intro">
+          <span class="eyebrow">02 / PRACTICAL IT</span>
+          <h2>From technical knowledge to real-world operations.</h2>
           <p>
-            ศึกษาข้อมูลเพิ่มเติมเกี่ยวกับบริการและแนวทางการใช้เทคโนโลยี
-            เพื่อสนับสนุนการทำงานขององค์กร
+            ความรู้ด้าน IT ไม่ได้มีแค่การติดตั้งระบบ
+            แต่รวมถึงการวางแผน การตรวจสอบ การรักษาความปลอดภัย
+            และการทดสอบว่าระบบสามารถใช้งานได้จริง
+          </p>
+
+          <a class="btn btn-secondary"
+             href="https://www.jpitsolution.com/blog/blog">
+            Explore Technical Articles ↗
+          </a>
+        </div>
+
+        <div class="workflow-list">
+
+          <article class="workflow-item">
+            <span class="workflow-number">01</span>
+            <div>
+              <h3>Plan the Infrastructure</h3>
+              <p>
+                ประเมิน Workload, Resource, Network,
+                Availability และความต้องการของระบบก่อนเริ่มติดตั้ง
+              </p>
+            </div>
+          </article>
+
+          <article class="workflow-item">
+            <span class="workflow-number">02</span>
+            <div>
+              <h3>Configure &amp; Secure</h3>
+              <p>
+                ตั้งค่าระบบตามหลัก Least Privilege,
+                Patch Management และแนวทางความปลอดภัยที่เหมาะสม
+              </p>
+            </div>
+          </article>
+
+          <article class="workflow-item">
+            <span class="workflow-number">03</span>
+            <div>
+              <h3>Monitor &amp; Maintain</h3>
+              <p>
+                ติดตามประสิทธิภาพ ตรวจสอบ Log
+                วางแผน Maintenance และจัดการปัญหาก่อนกระทบผู้ใช้
+              </p>
+            </div>
+          </article>
+
+          <article class="workflow-item">
+            <span class="workflow-number">04</span>
+            <div>
+              <h3>Test Recovery &amp; Document</h3>
+              <p>
+                ทดสอบการกู้คืนข้อมูล จัดทำเอกสารระบบ
+                และเตรียมขั้นตอนรับมือเมื่อเกิดเหตุขัดข้อง
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="section" id="resources">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">03 / EXTERNAL RESOURCES</span>
+            <h2>Tools, documentation &amp; resources.</h2>
+            <p>
+              แหล่งข้อมูลทางเทคนิคสำหรับการเรียนรู้เพิ่มเติม
+              และเครื่องมือที่ใช้ในงานดูแลระบบ IT
+            </p>
+          </div>
+        </div>
+
+        <div class="resources-grid">
+
+          <div class="resource-panel">
+            <span class="resource-label">OFFICIAL DOCUMENTATION</span>
+            <h3>Technical Documentation</h3>
+            <p>
+              เอกสารจากผู้พัฒนาโดยตรง เหมาะสำหรับการตรวจสอบ
+              วิธีติดตั้ง Configuration และข้อกำหนดของระบบ
+            </p>
+
+            <a class="resource-link"
+               href="https://learn.microsoft.com/"
+               target="_blank" rel="noopener noreferrer">
+              <span>Microsoft Learn</span>
+              <span>↗</span>
+            </a>
+
+            <a class="resource-link"
+               href="https://www.postgresql.org/docs/"
+               target="_blank" rel="noopener noreferrer">
+              <span>PostgreSQL Documentation</span>
+              <span>↗</span>
+            </a>
+
+            <a class="resource-link"
+               href="https://ubuntu.com/server/docs"
+               target="_blank" rel="noopener noreferrer">
+              <span>Ubuntu Server Documentation</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+          <div class="resource-panel">
+            <span class="resource-label">OPEN SOURCE / DEVELOPMENT</span>
+            <h3>Developer Resources</h3>
+            <p>
+              แหล่งเรียนรู้เครื่องมือพัฒนา ซอร์สโค้ด
+              และเทคโนโลยีที่ช่วยให้งาน IT มีประสิทธิภาพขึ้น
+            </p>
+
+            <a class="resource-link"
+               href="https://github.com/jpitsolution"
+               target="_blank" rel="noopener noreferrer">
+              <span>J&amp;P GitHub Repository</span>
+              <span>↗</span>
+            </a>
+
+            <a class="resource-link"
+               href="https://git-scm.com/doc"
+               target="_blank" rel="noopener noreferrer">
+              <span>Git Documentation</span>
+              <span>↗</span>
+            </a>
+
+            <a class="resource-link"
+               href="https://developer.mozilla.org/"
+               target="_blank" rel="noopener noreferrer">
+              <span>MDN Web Docs</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Technical Hub -->
+    <section class="section workflow" id="about">
+      <div class="container about-grid">
+
+        <div class="about-copy">
+          <span class="eyebrow">04 / ABOUT THIS PROJECT</span>
+          <h2>A technical knowledge space by J&amp;P IT Solution.</h2>
+
+          <p>
+            J&amp;P IT Technical Hub เป็นพื้นที่สำหรับรวบรวม
+            และเชื่อมโยงแหล่งความรู้ด้านเทคโนโลยีสารสนเทศ
+            สำหรับ IT Professionals, System Administrators
+            และผู้ที่ต้องการพัฒนาทักษะด้าน IT Infrastructure
+          </p>
+
+          <p>
+            เว็บไซต์หลักของบริษัททำหน้าที่นำเสนอข้อมูลบริการ
+            และช่องทางติดต่อทางธุรกิจ ส่วน Technical Hub
+            มุ่งเน้นการเข้าถึงองค์ความรู้ เอกสารทางเทคนิค
+            และแหล่งเรียนรู้จากผู้พัฒนาเทคโนโลยี
+          </p>
+
+          <div class="about-note">
+            เป้าหมายคือทำให้การค้นหาความรู้ด้าน IT
+            เป็นเรื่องง่าย เข้าถึงได้ และนำไปประยุกต์ใช้ได้จริง
+          </div>
+        </div>
+
+        <div class="about-panel">
+          <div class="about-panel-header">
+            <span>PROJECT PROFILE</span>
+            <span>JNP / TECH</span>
+          </div>
+
+          <div class="about-row">
+            <span>Project</span>
+            <span>TECHNICAL HUB</span>
+          </div>
+
+          <div class="about-row">
+            <span>Primary Focus</span>
+            <span>IT KNOWLEDGE</span>
+          </div>
+
+          <div class="about-row">
+            <span>Platform</span>
+            <span>GITHUB PAGES</span>
+          </div>
+
+          <div class="about-row">
+            <span>Maintained by</span>
+            <span>J&amp;P IT SOLUTION</span>
+          </div>
+
+          <div class="about-row">
+            <span>Official Website</span>
+            <span>JPITSOLUTION.COM</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-inner">
+
+        <div>
+          <h2>Looking for IT solutions for your business?</h2>
+          <p>
+            ดูข้อมูลบริการด้าน IT Infrastructure และโซลูชันสำหรับองค์กร
+            ผ่านเว็บไซต์หลักของ J&amp;P IT Solution
           </p>
         </div>
 
-        <div class="grid">
-          <article class="resource-card">
-            <h3>IT Knowledge &amp; Articles</h3>
-            <p>
-              บทความเกี่ยวกับ Network, Firewall, Server,
-              Backup และเทคโนโลยีสำหรับองค์กร
-            </p>
-            <a href="https://www.jpitsolution.com/blog/blog">
-              อ่านบทความบนเว็บไซต์หลัก →
-            </a>
-          </article>
+        <a class="btn"
+           href="https://www.jpitsolution.com/">
+          Visit Official Website <span>↗</span>
+        </a>
 
-          <article class="resource-card">
-            <h3>Project Portfolio</h3>
-            <p>
-              ตัวอย่างผลงานและโครงการด้านระบบเครือข่าย
-              Server, CCTV และระบบไอที
-            </p>
-            <a href="https://www.jpitsolution.com/portfolio">
-              ดูผลงานเพิ่มเติม →
-            </a>
-          </article>
-
-          <article class="resource-card">
-            <h3>Official Website</h3>
-            <p>
-              เข้าถึงข้อมูลบริษัท รายละเอียดบริการ
-              และช่องทางติดต่ออย่างเป็นทางการ
-            </p>
-            <a href="https://www.jpitsolution.com/">
-              jpitsolution.com →
-            </a>
-          </article>
-        </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2>ติดต่อ J&amp;P IT Solution</h2>
-        <p>
-          สอบถามข้อมูลบริการด้านระบบ IT สำหรับองค์กร
-          Network, Server, Backup, Security และ Business Application
-          ผ่านช่องทางติดต่อของบริษัท
-        </p>
-
-        <div class="contact-links">
-          <a class="btn btn-primary"
-             href="https://www.jpitsolution.com/contact">
-            ติดต่อผ่านเว็บไซต์
-          </a>
-          <a class="btn btn-outline"
-             href="https://www.facebook.com/jpitsolutionss"
-             target="_blank" rel="noopener noreferrer">
-            Facebook
-          </a>
-          <a class="btn btn-outline"
-             href="https://line.me/R/ti/p/%40108xqncr"
-             target="_blank" rel="noopener noreferrer">
-            LINE Official Account
-          </a>
-          <a class="btn btn-outline" href="tel:+66953609022">
-            โทร. 095-360-9022
-          </a>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
-      <span>© <span id="year">2026</span> J&amp;P IT Solution Co., Ltd.</span>
-      <span>
-        <a href="https://www.jpitsolution.com/">www.jpitsolution.com</a>
-      </span>
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a class="brand" href="#home">
+            <span class="brand-mark">J&amp;P</span>
+            <span class="brand-copy">
+              <span class="brand-name">IT Technical Hub</span>
+              <span class="brand-sub">KNOWLEDGE / RESOURCES</span>
+            </span>
+          </a>
+
+          <p>
+            A technical knowledge space covering IT infrastructure,
+            systems administration, security and business technology.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#knowledge">Knowledge</a>
+          <a href="#workflow">IT Guides</a>
+          <a href="#resources">Resources</a>
+          <a href="https://github.com/jpitsolution"
+             target="_blank" rel="noopener noreferrer">
+            GitHub ↗
+          </a>
+          <a href="https://www.jpitsolution.com/">
+            Official Website ↗
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> J&amp;P IT Solution Co., Ltd.</span>
+        <span>TECHNICAL KNOWLEDGE / BUILT FOR IT PROFESSIONALS</span>
+      </div>
+
     </div>
   </footer>
 
@@ -707,5 +1708,6 @@
     document.getElementById("year").textContent =
       new Date().getFullYear();
   </script>
+
 </body>
 </html>
