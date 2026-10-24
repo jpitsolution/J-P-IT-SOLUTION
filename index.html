@@ -950,9 +950,19 @@
         gap: 0;
       }
 
-      .nav-links > a:not(.nav-cta) {
-        display: none;
-      }
+    .nav-links > a:not(.nav-cta) {
+  display: none;
+     }
+
+/* แสดงเมนูสินค้าของเราบนมือถือ */
+.nav-links > a[href="https://www.jpitsolution.com/products/"] {
+  display: inline-flex;
+  align-items: center;
+  color: var(--green);
+  font-size: 11px;
+  white-space: nowrap;
+  margin-right: 10px;
+}
 
       .nav-cta {
         padding: 8px 10px;
